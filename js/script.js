@@ -5,6 +5,7 @@ const {createApp} = Vue;
 createApp({
     data(){
         return {
+            newelement: null,
              todolist: [
                  {
                      done: true ,
@@ -33,6 +34,14 @@ createApp({
     methods: {
        deletetask(index){
         this.todolist.splice(index, 1);
+       },
+       addtask(){
+        const object = {
+            text: this.newelement,
+            done: false
+        }
+        this.todolist.push(object)
+        this.newelement = null;
        }
   }
 }).mount('#app');
