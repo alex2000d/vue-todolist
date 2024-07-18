@@ -6,6 +6,7 @@ createApp({
     data(){
         return {
             newelement: null,
+            // creo il mio arrey di oggetti
              todolist: [
                  {
                      done: true ,
@@ -30,16 +31,18 @@ createApp({
              ]
         }
     },
-  
+      // aggiungo una funzione per cancellare un elemento della lista
     methods: {
        deletetask(index){
         this.todolist.splice(index, 1);
        },
+       // aggiungo una funzione che mi aggiunge l'elemento al dom
        addtask(){
         const object = {
             text: this.newelement,
             done: false
         }
+        // pusho nell'arrey
         this.todolist.push(object)
         this.newelement = null;
        }
