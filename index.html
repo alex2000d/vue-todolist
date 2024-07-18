@@ -22,10 +22,10 @@
                     <div class="col-12">
                        <div class="list">
                         <ul>
-                            <li>
+                            <li v-for="(i, index) in todolist">
                                 <div class="d-flex justify-content-between">
                                     <div>
-                                        lista cose da fare
+                                        {{i.text}}
                                     </div>
                                     <div class="buttons">
                                         <button class="btn btn-primary me-3">
@@ -38,71 +38,6 @@
                                 </div>
                                 
                             </li>
-                            <li>
-                                <div class="d-flex justify-content-between">
-                                    <div>
-                                        lista cose da fare
-                                    </div>
-                                    <div class="buttons">
-                                        <button class="btn btn-primary me-3">
-                                            <i class="fa-solid fa-check"></i>
-                                        </button>
-                                        <button class="btn btn-primary">
-                                            <i class="fa-solid fa-trash"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                                
-                            </li>
-                            <li>
-                                <div class="d-flex justify-content-between">
-                                    <div>
-                                        lista cose da fare
-                                    </div>
-                                    <div class="buttons">
-                                        <button class="btn btn-primary me-3">
-                                            <i class="fa-solid fa-check"></i>
-                                        </button>
-                                        <button class="btn btn-primary">
-                                            <i class="fa-solid fa-trash"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                                
-                            </li>
-                            <li>
-                                <div class="d-flex justify-content-between">
-                                    <div>
-                                        lista cose da fare
-                                    </div>
-                                    <div class="buttons">
-                                        <button class="btn btn-primary me-3">
-                                            <i class="fa-solid fa-check"></i>
-                                        </button>
-                                        <button class="btn btn-primary">
-                                            <i class="fa-solid fa-trash"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                                
-                            </li>
-                            <li>
-                                <div class="d-flex justify-content-between">
-                                    <div>
-                                        lista cose da fare
-                                    </div>
-                                    <div class="buttons">
-                                        <button class="btn btn-primary me-3">
-                                            <i class="fa-solid fa-check"></i>
-                                        </button>
-                                        <button class="btn btn-primary">
-                                            <i class="fa-solid fa-trash"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                                
-                            </li>
-                            
                            
                         </ul>
                         <div class="d-flex">
