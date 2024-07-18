@@ -23,7 +23,7 @@
                        <div class="list">
                         <ul>
                             <li v-for="(i, index) in todolist">
-                                <div class="d-flex justify-content-between">
+                                <div class="d-flex justify-content-between" :class="i.done === true ? 'text-decoration-line-through' : ''">
                                     <div>
                                         {{i.text}}
                                     </div>
@@ -31,7 +31,7 @@
                                         <button class="btn btn-primary me-3">
                                             <i class="fa-solid fa-check"></i>
                                         </button>
-                                        <button class="btn btn-primary">
+                                        <button class="btn btn-primary" @click="deletetask">
                                             <i class="fa-solid fa-trash"></i>
                                         </button>
                                     </div>

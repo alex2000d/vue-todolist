@@ -31,6 +31,8 @@ createApp({
     },
   
     methods: {
-     
+       deletetask(index){
+        this.todolist.splice(index, 1);
+       }
   }
 }).mount('#app');
